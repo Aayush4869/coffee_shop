@@ -1,0 +1,232 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+:root {
+    --navbar-height: 60px;
+}
+body{
+    background-color: black;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+
+    align-items: center;
+}
+
+.logo {
+    margin: -17px -10px;
+
+}
+
+.logo img {
+    height: 40px;
+    margin: 30px;
+
+}
+/* Navbar Styling */
+#navbar {
+    position: relative;
+}
+
+#navbar::before {
+    content: "  ";
+    background-color:black;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    padding: 0px 8px;
+    border-radius: 20px;
+    color: white;
+    padding-bottom: 10px ;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover {
+    display: block;
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    padding: 5px 14px;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+/* Section Styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding :3px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 559px;
+}
+#home::before{
+    content: "";
+    background: url(ian-dooley-DJ7bWa-Gwks-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -2;
+    top:0;
+    left:0;
+    height: 83%;
+    width: 100%;
+    opacity: 0.6;
+  
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Services Section */
+#services{
+    display: flex;
+    margin: 30px;
+}
+.ser{
+    height: 1px;
+    background-color: wheat;
+    margin: 0px 51px;
+}
+#serv{
+    font-family: 'Playfair Display', serif;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    opacity: 0.9;
+}
+#services .box{
+    border: 2px solid white;
+    color: wheat;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color:#1d1d1d;
+    
+}
+/* Clients */
+.clientss{
+    display: flex;
+    margin: 30px;
+}
+.box2{
+    display: flex;
+    margin: 50px 10px;
+}
+.box2 p{
+    padding-top: 76px;
+    color: wheat;
+    position: relative;
+    display: flex;
+    border: white;
+    /* background-color: white; */
+    padding: 74px;
+    z-index: -1;
+    font-size: 31px
+}
+.box2 img{
+    height: 256px;
+    display: block;
+    margin: auto;
+    padding-left: 70px;
+    
+}
+.leftcomment{
+    flex-direction: row;
+}
+.secondclient{
+    width: 80%;
+}
+.secondclient img{
+    height: 256px;
+    display: block;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+    padding-right: 127px;
+}
+.secondclient p{
+    padding: 10px;
+}
+/* Footer */
+.footer{
+    height: 120px   ;
+    width: 100%;
+    background-color: wheat;
+
+}
+.end p{
+    text-align:left;
+    padding-top:100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes */
+.hprimary{
+    font-size: 3rem;
+    padding: 15px;
+    color: wheat;
+    
+}
+.hsecondary{
+    font-size: 2.5rem;
+    padding: 15px;
+    
+}
+.btn{
+    padding:5px 20px;
+    border: 2px solid white;
+    background-color:transparent;
+    color: white;
+    margin: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
